@@ -1,0 +1,60 @@
+Interface Vehicle{
+	abstract void vehicleModel();
+	abstract void vehicledoors();
+}
+
+public class Car implements Vehicle{
+
+	public void vehicleModel(){
+		System.out.println("this is Porsche car");
+	}
+	public void vehicledoors(){
+		System.out.println("this car has 2 doors");
+	}
+}
+
+class parent{
+	
+	public void parentMethod(){
+		sysout("parent method");
+	}
+}
+
+class child extends parent{
+
+	public void childMethod(){
+		super.parentMethod();
+	}
+	public void parentMethod(){
+		sysout(" child method");
+	}
+}
+
+public class Main{
+
+	public static void main(String[] args){
+		child c = new child();
+		parent p = new parent();
+		parent p1 = new child();
+		c.parentMethod(); 	// child method	
+		p.parentMethod();	// parent method
+		p1.parentMethod();	//child method
+
+		Select dropDown = new Select(driver.findElement(by.id("dropdownid"));
+		dropDown.selectByVisibleText("requiredtext");
+		dropDown.selectByIndex(0);
+		
+	}
+
+
+}
+relative
+	//tagname[@atribute='value']
+	
+
+
+
+	
+
+
+}
